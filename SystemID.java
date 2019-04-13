@@ -70,7 +70,7 @@ public class SystemID {
      * @return 
      */
     private static String GetLinuxMotherBoard_serialNumber() {
-        String command = "dmidecode -s baseboard-serial-number";
+        String command = "sudo dmidecode -s baseboard-serial-number";
         String sNum = null; 
         try {   
             Process SerNumProcess = Runtime.getRuntime().exec(command);
